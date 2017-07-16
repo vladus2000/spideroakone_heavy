@@ -1,6 +1,6 @@
 /fixuser.sh evil
 /unevil.sh
-/runevilorroot SpiderOakONE --headless
+/runevilorroot.sh SpiderOakONE --headless
 while true
 do
 	sleep 1h
