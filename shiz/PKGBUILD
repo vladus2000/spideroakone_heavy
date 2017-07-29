@@ -27,6 +27,4 @@ install -Dm644 "$srcdir"/terms.txt "$pkgdir"/usr/share/licenses/$pkgname/terms.t
 
 rm -r "$pkgdir"/etc/apt/
 rm -r "$pkgdir"/etc/xdg/menus/applications-merged/SpiderOakONE.menu
-mv "$pkgdir"/opt/SpiderOakONE/lib/libz.so.1 "$pkgdir"/opt/SpiderOakONE/lib/libz.so.1.bak
-ln -s "$pkgdir"/usr/lib/libz.so.1 "$pkgdir"/opt/SpiderOakONE/lib
 }
