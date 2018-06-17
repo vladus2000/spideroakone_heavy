@@ -3,10 +3,10 @@ MAINTAINER vladus2000 <docker@matt.land>
 
 COPY shiz/ /
 
-RUN pacman -Syyu --noconfirm && \
+RUN /install-devel.sh && \
 	su - evil -c 'yaourt -S --needed --noconfirm lftp python2-boto python2-dropbox python2-gdata python2-gobject deja-dup duply borg openssh python-llfuse spideroak-one' && \
 	chmod +x /startup.sh /runit.sh && \
-	rm -rf /var/cache/pacman/pkg/* /var/lib/pacman/sync/*
+	/rm-devel.sh
 
 CMD /bin/bash -c /startup.sh
 
