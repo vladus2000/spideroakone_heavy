@@ -1,4 +1,4 @@
-# spideroakone
+# spideroakone\_heavy
 
 /root/.config/SpiderOakONE/
 
